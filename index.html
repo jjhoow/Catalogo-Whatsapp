@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Pedido</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="/assets/script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+        <script>
+         
+         
+       </script>
+</head>
+<body onload="App.show()">
+<h1> Catálogo via Whatsapp</h1>
+<div class="produto__button"><a href="#" onclick="App.openClose()">Cadastrar Produto</a></div>
+
+    <div class="section">
+        
+        <div class="container">
+          
+            <div class="catalog">
+          
+                <div id="catalog__flex" class="catalog__flex">
+               
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="form">
+                <h2>Novo Produto</h2>
+                <form id="form">
+                    <div class="input-group">
+                        <label class="sr-only" for="Nome"></label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="Descrição"></label>
+                        <textarea name="descricao" id="descricao" id="" cols="60" rows="10" placeholder="Descrição"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="Valor"></label>
+                        <input type="number" name="valor" step="0.01" id="valor" placeholder="0,00">
+                        <small class="help">Use o sinal - (negativo para despesas e , (virgula) para casas
+                            decimais</small>
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="data"></label>
+                        <input type="text" name="imagem" id="imagem" placeholder="URL da Imagem">
+                    </div>
+                <div class="input-group action">
+                    <div class="produto__button"><a href="#" onclick="App.openClose()">Cancelar</a></div>
+                    <div class="produto__button"><a href="#" onclick="App.cadastrar()">Cadastrar</a></div>
+                </div>
+                </form>
+            </div>
+            
+        </div>
+</body>
+
+</html>
